@@ -1,7 +1,7 @@
 const btn = document.querySelector("button");
 
 btn.addEventListener("click", function () {
-  const totSquare = 100;
+  const totSquare = document.querySelector("select").value;
   const bigBox = document.getElementById("playground");
   bigBox.innerHTML = "";
   for (let i = 0; i < totSquare; i++) {
@@ -19,6 +19,7 @@ function myDrawSquare(index, totSquare) {
   square.innerHTML = index + 1;
   square.addEventListener("click", function () {
     square.classList.add("active");
+    console.log(this.innerHTML);
   });
   return square;
 }

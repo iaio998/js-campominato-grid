@@ -19,6 +19,7 @@ function myDrawSquare(index, totSquare) {
   square.innerHTML = index + 1;
   square.addEventListener("click", function () {
     square.classList.add("active");
+    console.log(this.innerHTML);
   });
   return square;
 }
