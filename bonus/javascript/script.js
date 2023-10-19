@@ -1,7 +1,7 @@
 const btn = document.querySelector("button");
 
 btn.addEventListener("click", function () {
-  const totSquare = document.querySelector("select").value;
+  const totSquare = parseInt(document.querySelector("select").value);
   const bigBox = document.getElementById("playground");
   bigBox.innerHTML = "";
   for (let i = 0; i < totSquare; i++) {
